@@ -1,0 +1,46 @@
+import os
+os.system("cls")  
+
+USD = 1
+ARS = 290
+COP = 4600
+MXN = 20
+
+print('"Bienvenido al conversor de monedas internacionales mas chingon"')
+print("Elige una de las siguientes opciones de conversion")
+print("1-Dolares Estadounidenses a Pesos Argentinos")
+print("2-Pesos Argentinos a Dolares Estadounidenses")
+print("3-Dolares Estadounidenses a Pesos Colombianos")
+print("4-Pesos Colombianos a Dolares Estadounidenses")
+print("5-Dolares Estadounidenses a Pesos Mexicanos")
+print("6-Pesos Mexicanos a Dolares Estadounidenses")
+
+
+opcion = input("¿cual es su opcion?: ")
+opcion = int(opcion)
+def conversor(moneda):
+    dolares = int(input("¿cuantos Dolares tienes?: "))
+    pesos = dolares * moneda 
+    print(f"Tienes {pesos} pesos ")
+def conversor2(moneda):
+    pesos = int(input("¿cuantos pesos tienes?: "))
+    dolares = pesos / moneda
+    print(f"Tienes {dolares} Dolares") 
+   
+if opcion == 1:
+    conversor(ARS,argentinos)
+elif opcion == 2:
+    conversor2(ARS)
+
+elif opcion == 3:
+    conversor(COP)
+elif opcion == 4:
+    conversor2(COP)
+
+elif opcion == 5:
+    conversor(MXN)
+elif opcion == 6:
+    conversor2(MXN)
+else:
+    print("¡Escribe una opcion correcta!")
+
